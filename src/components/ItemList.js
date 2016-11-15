@@ -4,9 +4,11 @@ import Item from './Item'
 export default class ItemList extends Component {
   render() {
     let items = this.props.musicList.map((value, index) => {return <Item key={index} title={value.title}/>});
+    console.log(this.props.textSong);
     return <div>{items}</div>
   }
 }
+
 
 ItemList.defaultProps = {
   musicList: [

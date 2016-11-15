@@ -1,18 +1,11 @@
 import React, {Component} from 'react';
-import Form from './Form';
-import SearchInput from './SearchInput';
-import SearchButton from './SearchButton';
-import ItemList from './ItemList';
+import SongFinder from './SongFinder';
 
 class App extends Component {
   render() {
     return(
       <div>
-        <Form>
-          <SearchInput/>
-          <SearchButton/>
-        </Form>
-        <ItemList/>
+        <SongFinder />
       </div>
     );
   }
